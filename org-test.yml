@@ -7,3 +7,9 @@ spring:
         uri: http://example.org
         predicates:
         - Cookie=chocolate, ch.p
+zuul:
+  routes:
+    users:
+      path: /myusers/**
+      sensitiveHeaders:
+      url: https://downstream
