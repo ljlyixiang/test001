@@ -3,6 +3,7 @@ spring:
     gateway:
       routes:
       - id: cookie_route
+      - name: cookie_route2
         uri: http://example.org
         predicates:
         - Cookie=chocolate, ch.p
